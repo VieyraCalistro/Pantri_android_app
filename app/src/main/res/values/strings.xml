@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Pantri</string>
+    <string name="title_activity_second_screen">SecondScreen</string>
+    <string name="title_activity_third_screen">ThirdScreen</string>
+    <string name="select_number">Select Number</string>
+    <string name="pantri">PANTRI</string>
+    <string name="api_info_here">API Info here.</string>
+    <string name="back">Back</string>
+    <string name="search_food">Search Food</string>
+    <string name="go">Go</string>
+    <string-array name="numbers">
+
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+
+    </string-array>
+    <string name="title_activity_register_user">RegisterUser</string>
+
+    <string-array name="chooseGender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

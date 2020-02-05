@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ThirdScreen"
+    tools:showIn="@layout/activity_third_screen"
+    android:background="@drawable/greenback">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="8dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/_age"
+                android:layout_width="208dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint=" Age"
+                android:inputType="number"
+                android:maxLength="3"
+                android:nextFocusDown="@+id/_dailyIntakeButton"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/_foot" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:text="Age:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <Button
+                android:id="@+id/_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:text="Clear All"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/_calories_result"
+                app:layout_constraintVertical_bias="0.392" />
+
+            <Button
+                android:id="@+id/_dailyIntakeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorAccent"
+                android:nextFocusForward="@+id/_clear"
+                android:text="Calculate"
+                android:textColor="@android:color/background_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/_calories_result"
+                app:layout_constraintVertical_bias="0.391" />
+
+            <EditText
+                android:id="@+id/_fats_result"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Result"
+                android:inputType="none"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/_carbs_result" />
+
+            <EditText
+                android:id="@+id/_carbs_result"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Result"
+                android:inputType="none"
+                android:textColor="@android:color/background_dark"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/_protein_result" />
+
+            <TextView
+                android:id="@+id/_fats_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:text="Fats(g):"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/_carbs_TextView" />
+
+            <TextView
+                android:id="@+id/_carbs_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:text="Carbs(g):"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/_protein_TextView" />
+
+            <EditText
+                android:id="@+id/_protein_result"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Result"
+                android:textColor="@android:color/background_dark"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/_age" />
+
+
+            <TextView
+                android:id="@+id/_protein_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="63dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:text="Protein(g):"
+                app:layout_constraintEnd_toStartOf="@+id/_protein_result"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <EditText
+                android:id="@+id/_inches"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="104dp"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="(Inches)"
+                android:inputType="number"
+                android:maxLength="2"
+                android:nextFocusForward="@+id/_age"
+                app:layout_constraintStart_toStartOf="@+id/_foot"
+                app:layout_constraintTop_toBottomOf="@+id/_weight" />
+
+            <EditText
+                android:id="@+id/_foot"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="(Feet)"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusDown="@+id/_inches"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/_weight" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:text="Height(Feet/Inches):"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <EditText
+                android:id="@+id/_weight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:ems="10"
+                android:focusedByDefault="true"
+                android:hint="Weight(Pounds)"
+                android:inputType="number"
+                android:maxLength="3"
+                android:nextFocusForward="@+id/_foot"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:text="Weight(Ibs):"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/_genderTextView" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:onClick="sendMessage"
+                android:text="Back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/_genderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="104dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:text="Gender:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/_genderSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/_weight"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/_genderTextView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginRight="48dp"
+                android:text="Calories:"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/_fats_TextView" />
+
+            <EditText
+                android:id="@+id/_calories_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Result"
+                android:inputType="none"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/_fats_result" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

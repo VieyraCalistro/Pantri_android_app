@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthScreen"
+    android:background="@drawable/greenback">
+
+    <Button
+        android:id="@+id/_chicken"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="SearchChicken"
+        android:text="Chicken"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/_Pasta"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="SearchPasta"
+        android:text="Pasta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <Button
+        android:id="@+id/_steak"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="SearchSteak"
+        android:text="Steak"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <Button
+        android:id="@+id/_shrimp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="SearchShrimp"
+        android:text="Shrimp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+    <Button
+        android:id="@+id/tofuButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="SearchTofu"
+        android:text="Tofu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/garbanzosButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="SearchGarbanzos"
+        android:text="Garbanzos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <Button
+        android:id="@+id/tempehButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="SearchTempeh"
+        android:text="Tempeh"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <Button
+        android:id="@+id/blackBeansButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="SearchBlackBeans"
+        android:text="Black beans"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="sendMessage"
+        android:text="Back"
+        android:textColor="@android:color/background_dark"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Search_Food"
+        app:layout_constraintEnd_toStartOf="@+id/logoName"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbarStyle="insideInset"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/Popular_Searches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Quick Popular/Searches"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:fontFamily="sans-serif-smallcaps"
+            app:layout_constraintStart_toStartOf="@+id/scrollView2"
+            app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="200dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="8dp" />
+
+
+    <TextView
+        android:id="@+id/logoName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="296dp"
+        android:layout_marginLeft="296dp"
+        android:layout_marginBottom="112dp"
+        android:text="@string/pantri"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <EditText
+        android:id="@+id/Search_Food"
+        android:layout_width="127dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:layout_marginBottom="52dp"
+        android:clickable="false"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="@string/search_food"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <Button
+        android:id="@+id/button_Go"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginRight="192dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/go"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/Search_Food"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <TextView
+        android:id="@+id/_invalidEntry"
+        android:layout_width="209dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Search_Food"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/clearButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Clear"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_Go"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
+
+    <CheckBox
+        android:id="@+id/VeganCheckBox"
+        android:layout_width="89dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Vegan"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toEndOf="@+id/clearButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="330dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="412dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="505dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="245dp" />
+
+</android.support.constraint.ConstraintLayout>
